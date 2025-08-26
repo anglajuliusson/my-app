@@ -1,0 +1,235 @@
+header {
+    margin: 0;
+    background-color: red;
+    color: white;
+}
+a {
+    color: white;
+}
+
+@media (min-width:1025px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+        "h1 menu";
+        grid-template-rows: auto;
+        padding: 2em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        grid-area: h1;
+        margin: 1em;
+    }
+    .menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2em;
+    }
+    ul {
+        gap: 50px;
+    }
+    a {
+        font-size: larger;
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        display: grid;
+        grid-template-areas: 
+        "h1 menu";
+        grid-template-rows: auto 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2em;
+    }
+    h1 {
+        grid-area: h1;
+        margin: 1em;
+    }
+    .menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul {
+        gap: 30px;
+    }
+    a {
+        font-size: large;
+    }
+}
+@media (max-width: 600px) {
+    .close{display: block;} 
+    .menu-btn {display: block;} 
+    .mobilmenu {display: block !important;} 
+    .bars {display: block !important;}
+    .navmenu, .menu {display: none !important;}
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+        "h1 menu";
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+    h1 {
+        grid-area: h1;
+        margin-right: 2em;
+        font-size: x-large;
+    }
+    .mobile-menu {
+        grid-area: menu;
+    }
+    button {
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        background-color: red;
+        color: white;
+    }
+    ul {
+        gap: 30px;
+    }
+    .mobile-menu ul {
+        position: absolute;
+        top: 7em;
+    }
+    a {
+        font-size: large;
+    }
+}
+/* Dölj mobilmeny vid större skärm*/
+@media (min-width: 601px) {
+    .close{display: none !important;} 
+    .menu-btn {display: none !important;} 
+    .mobilmenu {display: none !important;} 
+    .desktop-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+/* CSS för mobilmenyn och att den endast visas för mindre skärmar */
+@media (max-width: 600px) {
+    .mobile-menu {
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        background-color: red;
+    }
+    ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        top: 5em;
+    }
+    li {
+        padding: 0.8em 0;
+        width: 100%;
+        margin: 10px;
+    }
+    a {
+        text-decoration: none;
+        padding: 0 1em;
+        color: white;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+    .mobilmenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* Meny knapp, öppna meny */
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        margin-left: auto;
+        position: absolute;
+        right: 2em;
+    }
+    .menutext {
+        font-size: 1.2em;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        line-height: 25px;
+    }
+    .open {
+        margin: 0 1em;
+    }
+    /* CSS för hamburger-icon */
+    .bars {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+    /* Meny knapp, stäng */
+    .close {
+        margin: 1em 1.5em;
+        padding: 10px 15px;
+        width: auto;
+        height: auto;
+        z-index: 1000;
+    }
+    /* Skapa kryss */
+    .cross1, .cross2 {
+        width: 25px;
+        position: relative;
+    }
+    .cross1 {
+        transform: rotate(45deg);
+        top: 5px;
+    }
+    .cross2 {
+        transform: rotate(135deg);
+        top: -3px;
+    }
