@@ -6,6 +6,9 @@ header {
 a {
     color: white;
 }
+.current {
+    text-decoration: underline;
+}
 
 @media (min-width:1025px) {
     header {
