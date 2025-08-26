@@ -9,7 +9,7 @@
         </ul>
       </nav>
     </div>
-      <button class="menu-btn open" id="open-menu"> 
+      <button class="menu-btn open" (click)="toggleMenu()" *ngIf="!isMenuOpen"> 
         <span class="menu-icon"> 
             <span class="bars"></span> 
             <span class="bars"></span> 
@@ -17,14 +17,14 @@
         </span> 
         <span class="menutext">Meny</span> 
         </button> 
-        <button class="menu-btn close" id="close-menu"> 
+        <button class="menu-btn close" (click)="toggleMenu()" *ngIf="isMenuOpen"> 
         <span class="menu-icon"> 
             <span class="bars cross1"></span> 
             <span class="bars cross2"></span> 
         </span> 
         <span class="menutext">Stäng meny</span> 
         </button> 
-        <nav class="menu" id="nav-menu"> 
+        <nav class="mobile-menu" id="nav-menu" *ngIf="isMenuOpen"> 
             <ul class="mobilmenu">
                 <li><a routerLink="/home">Startsida</a></li>
                 <li><a routerLink="/convertion">Konvertera värden</a></li>
