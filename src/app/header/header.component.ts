@@ -1,12 +1,17 @@
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [RouterModule, NgIf, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  isMenuOpen = false; // Styr om menyn visas eller inte
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }
