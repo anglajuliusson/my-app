@@ -4,6 +4,7 @@ footer {
     text-align: center;
     margin: 0;
     font-size: medium;
+    margin-top: 4em;
 }
 @media (min-width: 601px) {
     footer {
