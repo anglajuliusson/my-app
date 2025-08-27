@@ -1,0 +1,33 @@
+:host {
+    text-align: center;
+}
+h2 {
+    margin: 2em;
+    font-size: xx-large;
+}
+.text {
+    padding: 2em;
+}
+p, li {
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    font-size: large;
+}
+li {
+    margin-bottom: 20px;
+}
+h3 {
+    margin-top: 2em;
+}
+.lastText {
+    margin-bottom: 2em;
+}
+@media (max-width: 600px) {
+    p, li {
+        font-size: medium;
+        max-width: 400px;
+        width: 100%;
+    }
+}
