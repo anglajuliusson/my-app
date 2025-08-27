@@ -12,19 +12,19 @@
     <label for="feet">Feet:</label>
     <input type="number" [(ngModel)]="feet">
     <button class="convertFToMButton" (click)="feetToMeters()">Konvertera</button>
-    <p>Resultat: {{ feetResult }}</p>
+    <p>Meter: {{ feetResult }}</p>
 </div>
 <div>
     <h3>Celsius till fahrenheit</h3>
     <label for="celsius">Celsius:</label>
     <input type="number" [(ngModel)]="celsius">
     <button class="convertCToFButton" (click)="celsiusToFahrenheit()">Konvertera</button>
-    <p>Resultat: {{ celsiusResult}}</p>
+    <p>Fahrenheit: {{ celsiusResult}}</p>
 </div>
 <div>
     <h3>Fahrenheit till celsius</h3>
     <label for="fahrenheit">Fahrenheit:</label>
     <input type="number" [(ngModel)]="fahrenheit">
     <button class="convertFToCButton" (click)="fahrenheitToCelsius()">Konvertera</button>
-    <p>Resultat: {{ fahrenheitResult}}</p>
+    <p>Celsius: {{ fahrenheitResult}}</p>
   </div>
