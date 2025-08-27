@@ -1,0 +1,45 @@
+h2, p {
+    text-align: center;
+    margin: 2em;
+}
+h2 {
+    font-size: xx-large;
+}
+p {
+    font-size: x-large;
+}
+.me img {
+    border-radius: 500%;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.me p {
+    font-style: italic;
+}
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.summer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+}
+.summer img {
+    margin: 10px;
+}
+@media (max-width: 600px) {
+    .me p {
+        font-size: larger;
+    }
+    .summer p {
+        font-size: large;
+        margin-top: 3em;
+    }
+}
