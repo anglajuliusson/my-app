@@ -1,7 +1,7 @@
 <h2>Konvertera värden</h2>
 
 <div class="metersToFeet">
-    <h3>Meter till feet</h3>
+    <h3>Meter till feet:</h3>
     <label for="meter">Meter:</label>
     <input type="number" [(ngModel)]="meter">
     <button class="convertMToFButton" (click)="metersToFeet()">Konvertera</button>
@@ -15,14 +15,14 @@
     <p>Meter: {{ feetResult }}</p>
 </div>
 <div>
-    <h3>Celsius till fahrenheit</h3>
+    <h3>Celsius till fahrenheit:</h3>
     <label for="celsius">Celsius:</label>
     <input type="number" [(ngModel)]="celsius">
     <button class="convertCToFButton" (click)="celsiusToFahrenheit()">Konvertera</button>
     <p>Fahrenheit: {{ celsiusResult}}</p>
 </div>
 <div>
-    <h3>Fahrenheit till celsius</h3>
+    <h3>Fahrenheit till celsius:</h3>
     <label for="fahrenheit">Fahrenheit:</label>
     <input type="number" [(ngModel)]="fahrenheit">
     <button class="convertFToCButton" (click)="fahrenheitToCelsius()">Konvertera</button>
