@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './Home/home.component';
-import { ConvertionComponent } from './Convertion/convertion.component';
-import { DescriptionComponent } from './Description/description.component';
+import { HomeComponent } from './home/home.component';
+import { ConvertionComponent } from './convertion/convertion.component';
+import { DescriptionComponent } from './description/description.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
